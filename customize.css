@@ -1,0 +1,174 @@
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 230px;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 32px 8px 32px;
+    text-decoration: none;
+    font-size: 23px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .sidenav a:focus {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.main {
+    margin-left: 230px; /* Same as the width of the sidenav */
+    overflow-x: hidden;
+}
+
+.heading {
+    padding: 20px 20px 20px 40px !important;
+    background: grey;
+}
+
+.heading p {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.overview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    color: #818181;
+}
+
+.dropdown-content {
+  display: none;
+  opacity: 0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 8px 32px 8px 32px;
+  transition: 5s;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #818181;
+  padding: 12px 16px;
+  margin-right: -30px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+}
+
+.card-text {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.card {
+  border-radius: .75rem !important;
+}
+
+.custom-invalid-feedback {
+  display: none;
+  width: 100%;
+  margin-top: .25rem;
+  font-size: .875em;
+  color: #dc3545;
+}
+
+.custom-invalid-field {
+  border-color: #dc3545 !important;
+  padding-right: calc(1.5em + .75rem) !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e") !important;
+  background-repeat: no-repeat !important;
+  background-position: right calc(.375em + .1875rem) center !important;
+  background-size: calc(.75em + .375rem) calc(.75em + .375rem) !important;
+  box-shadow: 0 0 0 0.25rem rgb(220 53 69 / 25%) !important;
+}
+
+.icon {
+  width: 20%;
+}
+
+body {
+  background-color: #f4f4f4 !important;
+}
+
+.login-form, .verify-form {
+  background-color: #fff;
+  box-shadow: 0 30px 60px 0 rgb(0 0 0 / 30%);
+  padding: 80px 80px !important;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.card-header {
+  padding: .5rem 1rem;
+  margin-bottom: 0;
+  font-size: 25px;
+  background-color: unset !important;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+a.link {
+  color: rgb(0, 0, 0);
+  text-decoration: unset;
+}
+
+a.link:hover {
+  color: rgb(139, 139, 139);
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+#refresh:hover, .alt_link:hover{
+  color: #8a8a8a !important;
+  
+}
+
+.btn-primary-default {
+  color: #fff !important;
+  background-color: #0d6efd !important;
+  border-color: #0d6efd !important;
+}
+
+.btn-primary-default:hover {
+  color: #fff !important;
+  background-color: #0b5ed7 !important;
+  border-color: #0a58ca !important;
+}
